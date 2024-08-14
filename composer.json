@@ -1,12 +1,12 @@
 {
-    "name": "blade-organization/blade-heroicons",
-    "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
-    "keywords": ["Blade", "Heroicons", "Laravel"],
-    "homepage": "https://github.com/blade-organization/blade-heroicons",
+    "name": "WillanVelascoFernandez/blade-dagoicons",
+    "description": "A package to easily make use of Dagoicons in your Laravel Blade views.",
+    "keywords": ["Blade", "Dagoicons", "Laravel"],
+    "homepage": "https://github.com/WillanVelascoFernandez/blade-dagoicons",
     "license": "MIT",
     "authors": [
         {
-            "name": "Blade Developer"
+            "name": "TheDagofugo"
         }
     ],
     "require": {
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BladeUI\\Heroicons\\": "src"
+            "BladeUI\\Dagoicons\\": "src"
         }
     },
     "autoload-dev": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BladeUI\\Heroicons\\BladeHeroiconsServiceProvider"
+                "BladeUI\\Dagoicons\\BladeDagoiconsServiceProvider"
             ]
         }
     },
