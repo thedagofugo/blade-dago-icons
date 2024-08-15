@@ -1,13 +1,13 @@
 # Blade Dagoicons
 
-<a href="https://github.com/thedagofugo/blade-dagoicons/actions?query=workflow%3ATests">
-    <img src="https://github.com/blade-ui-kit/blade-dagoicons/workflows/Tests/badge.svg" alt="Tests">
+<a href="https://github.com/thedagofugo/blade-dago-icons/actions?query=workflow%3ATests">
+    <img src="https://github.com/blade-ui-kit/blade-dago-icons/workflows/Tests/badge.svg" alt="Tests">
 </a>
-<a href="https://packagist.org/packages/thedagofugo/blade-dagoicons">
-    <img src="https://img.shields.io/packagist/v/thedagofugo/blade-dagoicons" alt="Latest Stable Version">
+<a href="https://packagist.org/packages/thedagofugo/blade-dago-icons">
+    <img src="https://img.shields.io/packagist/v/thedagofugo/blade-dago-icons" alt="Latest Stable Version">
 </a>
-<a href="https://packagist.org/packages/thedagofugo/blade-dagoicons">
-    <img src="https://img.shields.io/packagist/dt/thedagofugo/blade-dagoicons" alt="Total Downloads">
+<a href="https://packagist.org/packages/thedagofugo/blade-dago-icons">
+    <img src="https://img.shields.io/packagist/dt/thedagofugo/blade-dago-icons" alt="Total Downloads">
 </a>
 
 A package to easily make use of [Dagoicons](https://github.com/refactoringui/Dagoicons) in your Laravel Blade views.
@@ -22,7 +22,7 @@ For a full list of available icons see [the SVG directory](resources/svg) or pre
 ## Installation
 
 ```bash
-composer require thedagofugo/blade-dagoicons
+composer require thedagofugo/blade-dago-icons
 ```
 
 ## Updating
@@ -35,10 +35,10 @@ Blade Dagoicons uses Blade Icons under the hood. Please refer to [the Blade Icon
 
 ## Configuration
 
-Blade Dagoicons also offers the ability to use features from Blade Icons like default classes, default attributes, etc. If you'd like to configure these, publish the `blade-dagoicons.php` config file:
+Blade Dagoicons also offers the ability to use features from Blade Icons like default classes, default attributes, etc. If you'd like to configure these, publish the `blade-dago-icons.php` config file:
 
 ```bash
-php artisan vendor:publish --tag=blade-dagoicons-config
+php artisan vendor:publish --tag=blade-dago-icons-config
 ```
 
 ## Usage
@@ -72,13 +72,13 @@ The solid icons can be referenced like this:
 If you want to use the raw SVG icons as assets, you can publish them using:
 
 ```bash
-php artisan vendor:publish --tag=blade-dagoicons --force
+php artisan vendor:publish --tag=blade-dago-icons --force
 ```
 
 Then use them in your views like:
 
 ```blade
-<img src="{{ asset('vendor/blade-dagoicons/o-adjustments.svg') }}" width="10" height="10"/>
+<img src="{{ asset('vendor/blade-dago-icons/o-adjustments.svg') }}" width="10" height="10"/>
 ```
 
 ## Changelog

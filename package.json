@@ -1,6 +1,6 @@
 {
   "private": true,
   "dependencies": {
-    "dagoicons": "^1.0.1"
+    "dago-icons": "^1.0.1"
   }
 }
