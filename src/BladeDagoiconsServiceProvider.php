@@ -17,7 +17,7 @@ final class BladeDagoiconsServiceProvider extends ServiceProvider
         $this->callAfterResolving(Factory::class, function (Factory $factory, Container $container) {
             $config = $container->make('config')->get('blade-dagoicons', []);
 
-            $factory->add('Dagoicons', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
+            $factory->add('dagoicons', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
         });
     }
 

@@ -1,13 +1,13 @@
 # Blade Dagoicons
 
-<a href="https://github.com/WillanVelascoFernandez/blade-dagoicons/actions?query=workflow%3ATests">
+<a href="https://github.com/thedagofugo/blade-dagoicons/actions?query=workflow%3ATests">
     <img src="https://github.com/blade-ui-kit/blade-dagoicons/workflows/Tests/badge.svg" alt="Tests">
 </a>
-<a href="https://packagist.org/packages/WillanVelascoFernandez/blade-dagoicons">
-    <img src="https://img.shields.io/packagist/v/WillanVelascoFernandez/blade-dagoicons" alt="Latest Stable Version">
+<a href="https://packagist.org/packages/thedagofugo/blade-dagoicons">
+    <img src="https://img.shields.io/packagist/v/thedagofugo/blade-dagoicons" alt="Latest Stable Version">
 </a>
-<a href="https://packagist.org/packages/WillanVelascoFernandez/blade-dagoicons">
-    <img src="https://img.shields.io/packagist/dt/WillanVelascoFernandez/blade-dagoicons" alt="Total Downloads">
+<a href="https://packagist.org/packages/thedagofugo/blade-dagoicons">
+    <img src="https://img.shields.io/packagist/dt/thedagofugo/blade-dagoicons" alt="Total Downloads">
 </a>
 
 A package to easily make use of [Dagoicons](https://github.com/refactoringui/Dagoicons) in your Laravel Blade views.
@@ -22,7 +22,7 @@ For a full list of available icons see [the SVG directory](resources/svg) or pre
 ## Installation
 
 ```bash
-composer require WillanVelascoFernandez/blade-dagoicons
+composer require thedagofugo/blade-dagoicons
 ```
 
 ## Updating

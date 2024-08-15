@@ -1,8 +1,8 @@
 {
-    "name": "WillanVelascoFernandez/blade-dagoicons",
+    "name": "thedagofugo/blade-dagoicons",
     "description": "A package to easily make use of Dagoicons in your Laravel Blade views.",
     "keywords": ["Blade", "Dagoicons", "Laravel"],
-    "homepage": "https://github.com/WillanVelascoFernandez/blade-dagoicons",
+    "homepage": "https://github.com/thedagofugo/blade-dagoicons",
     "license": "MIT",
     "authors": [
         {
@@ -16,7 +16,7 @@
     },
     "require-dev": {
         "orchestra/testbench": "^9.0",
-        "phpunit/phpunit": "^10.0"
+        "phpunit/phpunit": "11.3.x-dev"
     },
     "autoload": {
         "psr-4": {
