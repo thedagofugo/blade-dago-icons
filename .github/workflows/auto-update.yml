@@ -67,7 +67,7 @@ jobs:
 
       - name: Verify node_modules/dago-icons exists
         run: |
-          if [ ! -d "node_modules/dago-icons" ]; then
+          if [ ! -d "vendor/dago-icons" ]; then
             echo "dago-icons module is missing!"
             exit 1
           fi
