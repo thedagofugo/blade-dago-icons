@@ -1,7 +1,7 @@
 {
     "name": "thedagofugo/blade-dago-icons",
     "description": "A package to easily make use of Dagoicons in your Laravel Blade views.",
-    "keywords": ["Blade", "Dagoicons", "Laravel"],
+    "keywords": ["Blade", "dago-icons", "icons", "Laravel"],
     "homepage": "https://github.com/thedagofugo/blade-dago-icons",
     "license": "MIT",
     "authors": [
@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TheDagofugo\\Dagoicons\\": "src"
+            "TheDagofugo\\DagoIcons\\": "src"
         }
     },
     "autoload-dev": {
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "TheDagofugo\\Dagoicons\\BladeDagoIconsServiceProvider"
+                "TheDagofugo\\DagoIcons\\BladeDagoIconsServiceProvider"
             ]
         }
     },

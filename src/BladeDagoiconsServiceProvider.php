@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TheDagofugo\Dagoicons;
+namespace TheDagofugo\DagoIcons;
 
 use BladeUI\Icons\Factory;
 use Illuminate\Contracts\Container\Container;

@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use TheDagofugo\Dagoicons\BladeDagoIconsServiceProvider;
+use TheDagofugo\DagoIcons\BladeDagoIconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Orchestra\Testbench\TestCase;
 use PHPUnit\Framework\Attributes\Test;
