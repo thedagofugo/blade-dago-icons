@@ -1,7 +1,7 @@
 # Blade Dagoicons
 
 <a href="https://github.com/thedagofugo/blade-dago-icons/actions?query=workflow%3ATests">
-    <img src="https://github.com/blade-ui-kit/blade-dago-icons/workflows/Tests/badge.svg" alt="Tests">
+    <img src="https://github.com/thedagofugo/blade-dago-icons/workflows/Tests/badge.svg" alt="Tests">
 </a>
 <a href="https://packagist.org/packages/thedagofugo/blade-dago-icons">
     <img src="https://img.shields.io/packagist/v/thedagofugo/blade-dago-icons" alt="Latest Stable Version">
