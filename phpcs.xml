@@ -2,5 +2,14 @@
 <ruleset name="MyStandard">
     <file>src/</file>
     <file>tests/</file>
-    <rule ref="PSR2"/>
+
+    <!-- Disable specific rules -->
+    <rule ref="Squiz.NamingConventions.ValidVariableName">
+        <exclude name="MethodName"/>
+    </rule>
+    <rule ref="Generic.Files.LineLength">
+        <exclude name="LineLength"/>
+    </rule>
+
+    <rule ref="PSR12"/>
 </ruleset>
