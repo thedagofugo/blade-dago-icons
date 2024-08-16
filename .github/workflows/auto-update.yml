@@ -37,33 +37,8 @@ jobs:
           ref: ${{ env.BRANCH }}
           path: ./dist
 
-      - name: Install Node.js dependencies
-        run: npm install
-
-      - id: latest-commit
-        name: Get the latest commit
-        run: |
-          echo 'LATEST_COMMIT<<EOF' >> $GITHUB_ENV
-          cd ./dist && git log  --format="%H" -n 1 >> $GITHUB_ENV
-          echo 'EOF' >> $GITHUB_ENV
-
-      - id: current-commit
-        name: Get current commot
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: ./.commit
-
-      - name: Add versions to environment
-        run: |
-          echo "CURRENT_COMMIT=${{ steps.current-commit.outputs.content }}" >> $GITHUB_ENV
-
-      - name: Output versions
-        run: |
-          echo "Current commit: ${{ env.CURRENT_COMMIT }}"
-          echo "Latest commit: ${{ env.LATEST_COMMIT }}"
-
       - name: Install PHP dependencies
-        run: composer update --no-interaction --no-progress --dev
+        run: composer install --no-interaction --no-progress --dev
 
       - name: Verify vendor/dago-icons exists
         run: |
@@ -71,9 +46,6 @@ jobs:
             echo "dago-icons module is missing!"
             exit 1
           fi
-
-      - name: List files and directories
-        run: ls -R
 
       - name: Compile icons to resources directory
         if: env.CURRENT_COMMIT != env.LATEST_COMMIT
