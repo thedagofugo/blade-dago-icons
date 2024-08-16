@@ -34,7 +34,6 @@ jobs:
 
     name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }}
 
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -60,7 +59,7 @@ jobs:
       - name: Run PHP CS Fixer
         run: vendor/bin/php-cs-fixer fix
 
-        - name: Commit changes
+      - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Fix styling
