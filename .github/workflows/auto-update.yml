@@ -37,6 +37,9 @@ jobs:
           ref: ${{ env.BRANCH }}
           path: ./dist
 
+      - name: Install Node.js dependencies
+        run: npm install
+
       - id: latest-commit
         name: Get the latest commit
         run: |
