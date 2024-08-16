@@ -17,6 +17,9 @@ jobs:
         with:
           ref: main
 
+      - name: Pull latest changes
+        run: git pull origin main
+
       - name: Update Changelog
         uses: stefanzweifel/changelog-updater-action@v1
         with:
