@@ -2,10 +2,7 @@ name: Auto Update Icons
 
 on:
   schedule:
-    - cron: '47 15 * * 5'
-  push:
-    branches:
-      - main
+    - cron: '0 20 * * 5'
 
 jobs:
   generate:
@@ -36,9 +33,6 @@ jobs:
           repository: ${{ env.REPOSITORY }}
           ref: ${{ env.BRANCH }}
           path: ./dist
-
-      - name: Install Node.js dependencies
-        run: npm install
 
       - id: latest-commit
         name: Get the latest commit
