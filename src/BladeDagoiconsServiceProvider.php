@@ -15,17 +15,18 @@ final class BladeDagoIconsServiceProvider extends ServiceProvider
         $this->registerConfig();
 
         $this->callAfterResolving(
-            Factory::class, function (Factory $factory, Container $container) {
+            Factory::class,
+            function (Factory $factory, Container $container) {
                 $config = $container->make('config')->get('blade-dago-icons', []);
 
-                $factory->add('dago-icons', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
+                $factory->add('dago-icons', array_merge(['path' => __DIR__ . '/../resources/svg'], $config));
             }
         );
     }
 
     private function registerConfig(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/blade-dago-icons.php', 'blade-dago-icons');
+        $this->mergeConfigFrom(__DIR__ . '/../config/blade-dago-icons.php', 'blade-dago-icons');
     }
 
     public function boot(): void
@@ -33,14 +34,16 @@ final class BladeDagoIconsServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes(
                 [
-                __DIR__.'/../resources/svg' => public_path('vendor/blade-dago-icons'),
-                ], 'blade-dago-icons'
+                __DIR__ . '/../resources/svg' => public_path('vendor/blade-dago-icons'),
+                ],
+                'blade-dago-icons'
             );
 
             $this->publishes(
                 [
-                __DIR__.'/../config/blade-dago-icons.php' => $this->app->configPath('blade-dago-icons.php'),
-                ], 'blade-dago-icons-config'
+                __DIR__ . '/../config/blade-dago-icons.php' => $this->app->configPath('blade-dago-icons.php'),
+                ],
+                'blade-dago-icons-config'
             );
         }
     }
