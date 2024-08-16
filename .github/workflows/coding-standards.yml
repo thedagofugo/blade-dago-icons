@@ -4,4 +4,29 @@ on: [push]
 
 jobs:
   lint:
-    uses: laravel/.github/.github/workflows/coding-standards.yml@main
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          coverage: none
+
+      - name: Install dependencies
+        run: composer install
+
+      - name: Run PHP Code Sniffer
+        run: vendor/bin/phpcs
+
+      - name: Fix code styling
+        run: vendor/bin/phpcbf
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'Fix code styling'
+          branch: main
+          add_options: '--all'
