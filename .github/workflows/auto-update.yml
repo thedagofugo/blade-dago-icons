@@ -59,8 +59,11 @@ jobs:
           echo "Current commit: ${{ env.CURRENT_COMMIT }}"
           echo "Latest commit: ${{ env.LATEST_COMMIT }}"
 
-      - name: Install dependencies
-        run: composer update --no-interaction --no-progress --dev
+      - name: Install Node.js dependencies
+        run: npm install
+
+      - name: Install PHP dependencies
+        run: composer install --no-interaction --no-progress --dev
 
       - name: Compile icons to resources directory
         if: env.CURRENT_COMMIT != env.LATEST_COMMIT
@@ -82,4 +85,3 @@ jobs:
             This updates from [${{ env.CURRENT_COMMIT }}](https://github.com/${{ env.REPOSITORY }}/commit/${{ env.CURRENT_COMMIT }}) to [${{ env.LATEST_COMMIT }}](https://github.com/${{ env.REPOSITORY }}/commit/${{ env.LATEST_COMMIT }}).
             Check out the differences: [`${{ env.CURRENT_COMMIT }}` ... `${{ env.LATEST_COMMIT }}`](https://github.com/${{ env.REPOSITORY }}/compare/${{ env.CURRENT_COMMIT }}...${{ env.LATEST_COMMIT }})
           branch: feature/update-${{ env.LATEST_COMMIT }}
-
