@@ -6,5 +6,7 @@ jobs:
   lint:
     uses: laravel/.github/.github/workflows/coding-standards.yml@main
     with:
+      example_input: 'value'  # Proporciona los inputs necesarios si el workflow reutilizable los requiere
+
     permissions:
       contents: write
