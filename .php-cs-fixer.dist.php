@@ -1,5 +1,6 @@
 <?php
 
+use PhpCsFixer\Config;
 use PhpCsFixer\Finder;
 
 $finder = Finder::create()
@@ -9,5 +10,10 @@ $finder = Finder::create()
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
-return Codeat3\styles($finder);
-
+return (new Config())
+    ->setRules([
+        '@PSR2' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        // Agrega más reglas aquí según sea necesario
+    ])
+    ->setFinder($finder);
