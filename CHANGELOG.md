@@ -2,7 +2,11 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
-## [Unreleased](https://github.com/thedagofugo/blade-dago-icons/compare/1.0.5...HEAD)
+## [Unreleased](https://github.com/thedagofugo/blade-dago-icons/compare/1.0.6...HEAD)
+
+## [1.0.6](https://github.com/thedagofugo/blade-dago-icons/compare/1.0.5...1.0.6) - 2024-08-19
+
+**Full Changelog**: https://github.com/thedagofugo/blade-dago-icons/compare/1.0.5...1.0.6
 
 ## [1.0.5](https://github.com/thedagofugo/blade-dago-icons/compare/1.0.4...1.0.5) - 2024-08-19
 
