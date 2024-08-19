@@ -3,6 +3,7 @@ name: Coding Standards
 on: [push]
 
 jobs:
+  lint:
     runs-on: ubuntu-latest
     
     # Configura permisos aquí
