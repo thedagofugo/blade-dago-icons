@@ -9,5 +9,5 @@ jobs:
     # Configura permisos aquí
     permissions:
       contents: write
-    
-    uses: laravel/.github/.github/workflows/coding-standards.yml@main
+    steps:
+      uses: laravel/.github/.github/workflows/coding-standards.yml@main
