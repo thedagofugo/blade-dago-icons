@@ -4,27 +4,4 @@ on: [push]
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Run Laravel Coding Standards
-        uses: laravel/.github/.github/workflows/coding-standards.yml@main
-        with:
-          # Opcional: puedes pasar parámetros si el workflow reutilizable los acepta
-
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: 'Fix code styling'
-          file_pattern: '.'
-          branch: main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: laravel/.github/.github/workflows/coding-standards.yml@main
