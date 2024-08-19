@@ -4,10 +4,12 @@ on: [push]
 
 jobs:
   lint:
+    # Definir el sistema operativo en el que se ejecuta el job
     runs-on: ubuntu-latest
     
-    # Configura permisos aquí
+    # Configurar permisos para el job
     permissions:
       contents: write
-    steps:
-      uses: laravel/.github/.github/workflows/coding-standards.yml@main
+
+    # Usar el workflow reutilizable al nivel del job
+    uses: laravel/.github/.github/workflows/coding-standards.yml@main
