@@ -1,15 +1,10 @@
-name: Coding Standards
+name: Run Coding Standards
 
 on: [push]
 
 jobs:
   lint:
-    # Definir el sistema operativo en el que se ejecuta el job
-    runs-on: ubuntu-latest
-    
-    # Configurar permisos para el job
+    uses: laravel/.github/.github/workflows/coding-standards.yml@main
+    with:
     permissions:
       contents: write
-
-    # Usar el workflow reutilizable al nivel del job
-    uses: laravel/.github/.github/workflows/coding-standards.yml@main
