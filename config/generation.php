@@ -32,7 +32,7 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
 
 return [
     [ // Regular Outline...
-        'source' => __DIR__.'/../node_modules/dago-icons',
+        'source' => __DIR__.'/../dist/packages/icons/src/svg/32',
         'destination' => __DIR__.'/../resources/svg',
         'safe' => true,
     ],
