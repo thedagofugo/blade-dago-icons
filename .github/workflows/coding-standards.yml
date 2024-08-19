@@ -3,5 +3,10 @@ name: Coding Standards
 on: [push]
 
 jobs:
-  lint:
+    runs-on: ubuntu-latest
+    
+    # Configura permisos aquí
+    permissions:
+      contents: write
+    
     uses: laravel/.github/.github/workflows/coding-standards.yml@main
