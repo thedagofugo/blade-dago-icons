@@ -3,6 +3,9 @@ name: Auto Update Icons
 on:
   schedule:
     - cron: '0 20 * * 5'
+  push:
+    branches:
+      - main
 
 jobs:
   generate:
